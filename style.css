@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.explore{
+  font-size: 55px;
+  font-weight: 500px;
+  font-style: italic;
+}
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+.note {
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.left {
+  background: linear-gradient(rgba(0, 0, 0, 0.007), rgba(0, 0, 0, 0.5)),
+    url(img/login2.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left,
+.note {
+  color: rgb(13, 2, 31);
+}
+.left,
+.p {
+  font-style: italic;
+}
+.sign-up {
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(13, 2, 31);
+}
+.login {
+  font-size: 35px;
+}
+.right {
+  color: rgb(2, 16, 26);
+  height: 100vh;
+  text-align: left;
+  background-color: rgba(13, 13, 14, 0.288);
+}
+.account {
+  margin: 20px;
+}
+.checkmark {
+  margin: 20px;
+}
+form {
+  width: 320px;
+}
+.fillings {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(2, 16, 26, 0.219);
+  border-radius: 8px;
+  color: rgba(16, 4, 36);
+  padding: 3px;
+  margin-bottom: 15px;
+}
+label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: small;
+}
+.signup-btn {
+  width: 100%;
+  background: rgba(16, 4, 36);
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+/*pseudo element */
+.signup-btn:hover {
+  background: rgb(10, 1, 24);
+  cursor: pointer;
+}
+.fillings:hover {
+  background: rgba(16, 4, 36, 0.144);
+}
+@media screen and (min-width: 1024px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .right,
+  .left {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+  .explore{
+    font-size: 50px;
+    font-weight: 500px;
+    font-style: italic;
+  }
+}
+@media screen and (min-width: 320px) {
+  .explore{
+    font-size: 30px;
+  }
+  .sign-up {
+    font-size: 30px;
+  }
+  .left,
+  p {
+    font-size: 10px;
+  }
+  .note {
+    height: 150px;
+  }
+}
